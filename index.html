@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+<!-- Title here -->
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the website</p>
+
+<!-- form starts here -->
+
+    <form id="survey-form" action="" type="POST">
+      <fieldset>
+<!-- Full name -->
+        <label for="name" id="name-label" >Full name<input id="name" type="text" placeholder=" John Smith..." required/> </label>
+<!-- Email -->
+        <label for="email" id="email-label" >Email<input id="email" type="email" placeholder=" JohnSmith@gmail.com..." required/> </label>
+<!-- Age -->
+        <label for="Phone number" id="number-label" >Age (optional)<input id="number" type="text" min="13" max="150" placeholder"Your Age"/> </label>
+<!-- Select input - Experience -->
+        <label>How was your experience so far?
+          <select id="dropdown">
+            <option value="0">(select an option)</option>
+            <option value="1">Liked it</option>
+            <option value="2">Somewhat like it</option>
+            <option value="3">Neutral</option>
+            <option value="4">Somewhat disliked it</option>
+            <option value="5">Disliked it</option>
+          </select>
+        </label>
+      </fieldset>
+<!-- Radio input -->        
+            <fieldset>
+        <legend>Which membership did you have?</legend>
+        <label for="free-account"><input id="free-account" type="radio" name="account-type" class="inline" value="6" checked /> Free Membership</label>
+        <label for="premium-account"><input id="premium-account" type="radio" name="account-type" value="7" class="inline" /> Premium Membership</label>
+        <label for="vip-account"><input id="vip-account" type="radio" name="account-type" value="8" class="inline" /> Vip Membership</label>
+      </fieldset>
+      <fieldset>
+<!-- Checkbox input -->
+        <legend>Which features did you have a negative experience with?</legend>
+        <label><input value="9" type="checkbox" name="account" class="inline"/>Account</label>
+        <label><input value="10" type="checkbox" name="checkout" class="inline"/>Checkout</label>
+        <label><input value="11" type="checkbox" name="support" class="inline"/>Support Contact</label>
+        <label><input value="12" type="checkbox" name="Delivery" class="inline"/>Delivery</label>
+<!-- Textarea input -->
+        <label for="feedback">Please write your feedback:
+          <textarea id="feedback" name="feedback"  class="inline feedback" > </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    </main>
+  </body>
+  <footer>
+  </footer>
+</html>
